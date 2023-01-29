@@ -1,0 +1,115 @@
+/*setting for whole page*/
+* {
+  padding: 5px;
+}
+/*setting for nav bar, banner*/
+nav {
+  background-color: rgb(69, 221, 208);
+}
+/*settings for main section*/
+main {
+  width: 95%;
+}
+.mainsetting {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+/*settings for left part of page*/
+.left {
+  text-align: left;
+  text-align: start;
+  width: 20%;
+}
+.left-header {
+  padding: 2.5%;
+  border-radius: 15px solid black;
+}
+.left p {
+  line-height: 50px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+}
+/*btn settings*/
+.btn,
+.searchbtn,
+.searchhistoryparts {
+  background-color: rgb(20, 81, 211);
+  color: aliceblue;
+  margin: 15px;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: 0px;
+}
+/*add a visable line between search and seach history btn*/
+.board {
+  border-top: 3px solid black;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.searchhistoryparts {
+  background-color: rgb(28, 124, 202);
+  padding: 6px;
+  border: 0px;
+}
+.right {
+  width: 70%;
+}
+/*add a visuable box for today's weather section*/
+.today {
+  width: 100%;
+  border: 3px solid black;
+}
+.cityname {
+  font-size: 25px;
+}
+.cityname,
+.date0,
+.icon0 {
+  display: inline-block;
+}
+.fivedayheader {
+  margin: 10px;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 0px;
+}
+/*make the 5 days predict box flex*/
+#fivedays {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-around;
+  display: none;
+}
+.partsfivedays {
+  background-color: rgba(8, 3, 3, 0.658);
+  display: inline-block;
+  color: aliceblue;
+  font-weight: bold;
+  margin: 10px;
+  padding-right: 50px;
+}
+.partsfivedays p {
+  text-align: left;
+  margin: 10px;
+  line-height: 35px;
+}
+/*page adjustments for small screen*/
+@media screen and (max-width: 760px) {
+  .left {
+    width: 100%;
+  }
+  .right {
+    width: 100%;
+  }
+  .mainsetting {
+    display: block;
+  }
+}
