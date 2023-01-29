@@ -59,7 +59,7 @@ $(".searchbtn").click(function () {
 
 function fetch1() {
   fetch(
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
       whichcity +
       "&appid=1c1db37f109216f4015898ae7bfc7c96"
   )
@@ -91,7 +91,9 @@ function fetch1() {
           .html(`(${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()})`);
         $(".icon0").attr(
           "src",
-          "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png"
+          "https://openweathermap.org/img/wn/" +
+            data.weather[0].icon +
+            "@2x.png"
         );
         $(".temp0")
           .css("font-weight", "bold")
@@ -106,7 +108,7 @@ function fetch1() {
     });
 
   fetch(
-    "http://api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
       whichcity +
       "&appid=1c1db37f109216f4015898ae7bfc7c96"
   )
@@ -122,7 +124,7 @@ function fetch1() {
         $(".date1").html(data.list[7].dt_txt.slice(0, 10));
         $(".icon1").attr(
           "src",
-          "http://openweathermap.org/img/wn/" +
+          "https://openweathermap.org/img/wn/" +
             data.list[7].weather[0].icon +
             "@2x.png"
         );
@@ -133,7 +135,7 @@ function fetch1() {
         $(".date2").html(data.list[15].dt_txt.slice(0, 10));
         $(".icon2").attr(
           "src",
-          "http://openweathermap.org/img/wn/" +
+          "https://openweathermap.org/img/wn/" +
             data.list[15].weather[0].icon +
             "@2x.png"
         );
@@ -144,7 +146,7 @@ function fetch1() {
         $(".date3").html(data.list[23].dt_txt.slice(0, 10));
         $(".icon3").attr(
           "src",
-          "http://openweathermap.org/img/wn/" +
+          "https://openweathermap.org/img/wn/" +
             data.list[23].weather[0].icon +
             "@2x.png"
         );
@@ -155,7 +157,7 @@ function fetch1() {
         $(".date4").html(data.list[31].dt_txt.slice(0, 10));
         $(".icon4").attr(
           "src",
-          "http://openweathermap.org/img/wn/" +
+          "https://openweathermap.org/img/wn/" +
             data.list[31].weather[0].icon +
             "@2x.png"
         );
@@ -166,7 +168,7 @@ function fetch1() {
         $(".date5").html(data.list[39].dt_txt.slice(0, 10));
         $(".icon5").attr(
           "src",
-          "http://openweathermap.org/img/wn/" +
+          "https://openweathermap.org/img/wn/" +
             data.list[39].weather[0].icon +
             "@2x.png"
         );
@@ -178,7 +180,7 @@ function fetch1() {
 }
 function fetch3() {
   fetch(
-    "http://api.openweathermap.org/data/2.5/weather?q=" +
+    "https://api.openweathermap.org/data/2.5/weather?q=" +
       whichcity +
       "&appid=1c1db37f109216f4015898ae7bfc7c96"
   )
@@ -203,7 +205,9 @@ function fetch3() {
           .html(`(${d.getMonth() + 1}/${d.getDate()}/${d.getFullYear()})`);
         $(".icon0").attr(
           "src",
-          "http://openweathermap.org/img/wn/" + data.weather[0].icon + "@2x.png"
+          "https://openweathermap.org/img/wn/" +
+            data.weather[0].icon +
+            "@2x.png"
         );
         $(".temp0")
           .css("font-weight", "bold")
@@ -218,7 +222,7 @@ function fetch3() {
     });
 
   fetch(
-    "http://api.openweathermap.org/data/2.5/forecast?q=" +
+    "https://api.openweathermap.org/data/2.5/forecast?q=" +
       whichcity +
       "&appid=1c1db37f109216f4015898ae7bfc7c96"
   )
@@ -234,7 +238,7 @@ function fetch3() {
         $(".date1").html(data.list[7].dt_txt.slice(0, 10));
         $(".icon1").attr(
           "src",
-          "http://openweathermap.org/img/wn/" +
+          "https://openweathermap.org/img/wn/" +
             data.list[7].weather[0].icon +
             "@2x.png"
         );
@@ -245,7 +249,7 @@ function fetch3() {
         $(".date2").html(data.list[15].dt_txt.slice(0, 10));
         $(".icon2").attr(
           "src",
-          "http://openweathermap.org/img/wn/" +
+          "https://openweathermap.org/img/wn/" +
             data.list[15].weather[0].icon +
             "@2x.png"
         );
@@ -256,7 +260,7 @@ function fetch3() {
         $(".date3").html(data.list[23].dt_txt.slice(0, 10));
         $(".icon3").attr(
           "src",
-          "http://openweathermap.org/img/wn/" +
+          "https://openweathermap.org/img/wn/" +
             data.list[23].weather[0].icon +
             "@2x.png"
         );
@@ -267,7 +271,7 @@ function fetch3() {
         $(".date4").html(data.list[31].dt_txt.slice(0, 10));
         $(".icon4").attr(
           "src",
-          "http://openweathermap.org/img/wn/" +
+          "https://openweathermap.org/img/wn/" +
             data.list[31].weather[0].icon +
             "@2x.png"
         );
@@ -278,7 +282,7 @@ function fetch3() {
         $(".date5").html(data.list[39].dt_txt.slice(0, 10));
         $(".icon5").attr(
           "src",
-          "http://openweathermap.org/img/wn/" +
+          "https://openweathermap.org/img/wn/" +
             data.list[39].weather[0].icon +
             "@2x.png"
         );
