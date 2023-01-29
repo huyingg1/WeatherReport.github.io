@@ -61,7 +61,7 @@ function fetch1() {
   fetch(
     "http://api.openweathermap.org/data/2.5/weather?q=" +
       whichcity +
-      "&appid=b10ce5e87f3822e450223e9d323263ce"
+      "&appid=1c1db37f109216f4015898ae7bfc7c96"
   )
     .then(function (response) {
       return response.json();
@@ -108,7 +108,7 @@ function fetch1() {
   fetch(
     "http://api.openweathermap.org/data/2.5/forecast?q=" +
       whichcity +
-      "&appid=b10ce5e87f3822e450223e9d323263ce"
+      "&appid=1c1db37f109216f4015898ae7bfc7c96"
   )
     .then(function (response) {
       return response.json();
@@ -180,7 +180,7 @@ function fetch3() {
   fetch(
     "http://api.openweathermap.org/data/2.5/weather?q=" +
       whichcity +
-      "&appid=b10ce5e87f3822e450223e9d323263ce"
+      "&appid=1c1db37f109216f4015898ae7bfc7c96"
   )
     .then(function (response) {
       return response.json();
@@ -220,7 +220,7 @@ function fetch3() {
   fetch(
     "http://api.openweathermap.org/data/2.5/forecast?q=" +
       whichcity +
-      "&appid=b10ce5e87f3822e450223e9d323263ce"
+      "&appid=1c1db37f109216f4015898ae7bfc7c96"
   )
     .then(function (response) {
       return response.json();
