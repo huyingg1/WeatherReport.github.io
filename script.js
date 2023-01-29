@@ -4,14 +4,6 @@ var cityhistory = [];
 $(function () {
   if (JSON.parse(localStorage.getItem("dataset")) !== null) {
     let arrl = JSON.parse(localStorage.getItem("dataset"));
-    console.log(arrl);
-    //console.log(typeof arrl);
-    //arrarr = arrl[0];
-    //console.log(arrarr);
-    //cityhistory.push(arrl);
-    //console.log(cityhistory[0]);
-    //arrl.push("a");
-    //console.log(arrl);
 
     for (var i = 0; i < arrl.length; i++) {
       cityhistory.push(arrl[i]);
@@ -32,7 +24,6 @@ $(function () {
         })
         .appendTo($(".searchhistory"));
     }
-    console.log(cityhistory);
   }
 });
 
@@ -85,13 +76,10 @@ function fetch1() {
         $(".wind0").html("wind:");
         $(".hum0").html("humidity:");
       } else {
-        console.log(cityhistory);
         if (cityhistory.includes(whichcity)) {
         } else {
           cityhistory.push(whichcity);
         }
-
-        console.log(cityhistory);
 
         localStorage.setItem("dataset", JSON.stringify(cityhistory));
 
@@ -126,7 +114,6 @@ function fetch1() {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
       if (data.cod === "404") {
         document.getElementById("fivedays").style.display = "none";
       } else {
@@ -208,7 +195,6 @@ function fetch3() {
         $(".wind0").html("wind:");
         $(".hum0").html("humidity:");
       } else {
-        console.log(data);
         document.getElementById("fivedays").style.display = "block";
         $(".cityname").css("font-weight", "bold").html(`${data.name}`);
         var d = new Date();
@@ -240,7 +226,6 @@ function fetch3() {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
       if (data.cod === "404") {
         document.getElementById("fivedays").style.display = "none";
       } else {
